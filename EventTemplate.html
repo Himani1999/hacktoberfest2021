@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>CODING COMPETITION</title>
+</head>
+<style>
+    
+    body{
+        background-color: rgb(7, 7, 7);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.maincontainer{
+    width: 100%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.image1{
+    height: 653px;
+}
+.centered {
+    margin-top: -300px;
+}  
+.text-block1 {
+    position: absolute;
+    bottom: 80%;
+    right: 42%;
+    color: red;
+}
+.text-block2{
+    position: absolute;
+    bottom: 73%;
+    right: 30%;
+    color: white;
+}
+.text-block3{
+    position: absolute;
+    bottom: 64%;
+    right: 39%;
+    color: white;
+    font-weight: 10;
+    font-size: 30px;
+}
+.text-block4{
+    position: absolute;
+    bottom: 50%;
+    right: 25%;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* border: 1px solid red; */
+    align-items: center;
+    width: 30%;
+    position: absolute;
+    bottom: 50%;
+    right: 35%;
+    color: white;
+}
+.btn-1{
+    position: absolute;
+    border: none;
+    font-size:15px;
+    color: white;
+    padding: 15px 15px;
+    bottom: 37%;
+    right: 45%;
+    background: linear-gradient(to right, #cc00cc 50%, #ff00ff 100%);
+}
+.div-2{
+    text-align: center;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.text-block5{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+.text-block6{
+    padding-top: 0px;
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+}
+.text-block7{
+    color: white;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+.grid-2-1{
+    border: 1px solid red;
+    height: 150px;
+    margin-right: 10px;
+    color: white;
+}
+.grid-2-2{
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid yellowgreen;
+    color: white;
+}
+.grid-2-3{
+    height: 150px;
+    border: 1px solid blue;
+    margin-left: 10px;
+    color: white;
+    margin-right: 10px;
+}
+.grid-2-4{
+    height: 150px;
+    border: 1px solid salmon;
+    color: white;
+    margin-left: 10px;
+}
+
+
+
+
+.grid-3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+/* .grid-3-1{
+    border: 1px solid blue;
+}
+.grid-3-2{
+    border: 1px solid brown;
+} */
+.event{
+    text-align: center;
+    color: goldenrod;
+    text-shadow: 1px 0px 2px gray;
+    font-size: 15px;
+}
+.biggest{
+    font-size: 40px;
+    font-weight: 5;
+    padding: 5px 0px;
+}
+.first-para{
+    color: gray;
+    padding: 5px 0px;
+}
+.second-para{
+    color: gray;
+    padding: 2px 0px;
+}
+.third-para{
+    color: gray;
+    padding: 2px 0px;
+}
+.four-para{
+    color: gray;
+    padding: 2px 0px;
+}
+.five-para{
+    color: gray;
+    padding: 2px 0px;
+}
+.btn-2{
+    background: linear-gradient(to right, #cc00cc 50%, #ff00ff 100%);
+    border: none;
+    margin-top: 10px;
+    padding: 15px 15px;
+}
+.div-color-1{
+    margin-left: 100px;
+    height: 500px;
+    background-color: #34495E ;
+}
+.div-color-2{
+    height: 250px;
+    background-color: white;
+    width: 200px;
+    margin-top: 235px;
+}
+.div-color-3{
+    height: 200px;
+    background-color: #34495E ;
+    position: absolute;
+    width: 250px;
+    margin-top: 47px;
+    margin-left: -100px;
+}
+
+.view{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: goldenrod;
+    font-weight: bold;
+}
+.category{
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.grid-4{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 20px;
+}
+.grid-4-1{
+    border: 15px solid white;
+    height: 300px;
+    width: 60%;
+    margin-left: 50px;
+}
+.grid-4-2{
+    border: 15px solid white;
+    height: 300px;
+    width: 65%;
+}
+.grid-4-3{
+    border: 15px solid white;
+    height: 300px;
+    width: 65%;
+}
+.grid-5{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+.grid-5-1{
+    border: 15px solid white;
+    height: 300px;
+    width: 60%;
+    margin-left: 50px;
+}
+.grid-5-2{
+    border: 15px solid white;
+    height: 300px;
+    width: 65%;
+}
+.grid-5-3{
+    border: 15px solid white;
+    height: 300px;
+    width: 65%;
+}
+
+.div-winning{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.winning{
+    padding-top: 50px;
+    color: goldenrod;
+    font-size: 20px;
+    text-align: center;
+}
+.prize{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 5;
+}
+.grid-6{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 40px;
+}
+.first-position{
+    text-align: center;
+    background: linear-gradient(to top right, #ccccff 50%, #ccccff 52%);
+}
+.second-position{
+    text-align: center;
+    background: linear-gradient(to bottom left, #993399 50%, #990099 52%);
+}
+.third-position{
+    text-align: center;
+    background: linear-gradient(to bottom left, #ff66cc 50%, #ff6699 52%);
+}
+.fourth-position{
+    text-align: center;
+    background: linear-gradient(to bottom left, #ffcc66 50%, #ff9900 52%);
+}
+.bg-color{
+    background-color: gray; 
+    opacity: 0.2; 
+    height: 200px;
+}
+.div-judge{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.judge{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.c-judges{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.grid-7{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding-top: 50px;
+}
+.grid-7-1{
+    background-color: white;
+    height: 250px; 
+    margin-right: 10px;
+}
+.grid-7-2{
+    background: linear-gradient(to bottom left, #ff3399 50%, #ffffff 50%);
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.grid-7-3{
+    background-color: white;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.grid-7-4{
+    background-color: white;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.grid-7-5{
+    background-color: white;
+    height: 250px;
+    margin-left: 10px;
+}
+
+.help{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.link{
+    color: white;
+}
+
+.sponsorships{
+    text-align: center;
+    font-weight: bold;
+}
+.sponsors{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.lastdiv{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.last-div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    margin: auto;
+}
+.circle-1{
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: grey;
+}
+.circle-2{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #34495E;
+}
+.circle-3{
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+
+</style>
+<body>
+    <div class="maincontainer" >
+        <div>
+            <img src="black-bg.png" width="100%" class="image1">
+            <h3 class="text-block1">UPCOMING CODING EVENT</h3>
+            <h2 class="text-block2">HURRYUP! REGISTER NOW DON'T WASTE TIME</h2>
+            <h2 class="text-block3">WE ARE CONDUCTING</h2>
+            <h1 class="text-block4">CODING COMPETITION</h1>
+            <div class="grid1">
+                <div><i class="fas fa-globe" style="color: blueviolet;"></i> Event</div>
+                <div><i class="fa fa-calendar" aria-hidden="true" style="color: blueviolet;"></i> 20 FEBRUARY,2022</div>
+            </div>
+            <div><button class="btn-1">REGISTER NOW</button></div>
+        </div>
+    </div>
+        <div class="maincontainer" style="background: linear-gradient(to right, #cc00cc 50%, #ff00ff 100%);">
+        <div class="container">
+        <div class="div-2">
+            <h3 class="text-block5">TIME IS RUNNING OUT</h3>
+            <h1 class="text-block6">BOOK YOUR SEAT TODAY</h1>
+            <div class="text-block7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique eligendi voluptas 
+                maxime natus tenetur exercitationem quibusdam minus culpa perferendis, 
+                distinctio quam dolor quas impedit reprehenderit sunt accusantium iste sint.</div>
+            <div class="grid-2">
+                <div class="grid-2-1"><h1>26</h1><p>DAYS</p></div>
+                <div class="grid-2-2"><h1>19</h1><p>HOURS</p></div>
+                <div class="grid-2-3"><h1>58</h1><p>MINUTES</p></div>
+                <div class="grid-2-4"><h1>37</h1><p>SECONDS</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="maincontainer" style="background-color: white; ">
+        <div class="container">
+            <div class="grid-3">
+                <div class="grid-3-1">
+                    <span class="event">ABOUT EVENT</span>
+                    <div class="biggest">BIGGEST 2021</div><div class="biggest"> EVENT </div>
+                    <div class="first-para">There are many variations of passages of available</div>
+                    <div class="second-para">but the majority have suffered alteration in some</div>
+                    <div class="third-para">form by injected humour, or randomised words</div>
+                    <div class="four-para">which don't look even slightly believeable. If you are</div>
+                    <div class="five-para">going to use a passage of you need to be sure</div>
+                    <div></div>
+                    <div><button class="btn-2">REGISTER NOW</button></div>
+                </div>
+                <div class="grid-3-2">
+                    <div class="div-color-1">hello
+                        <div class="div-color-2">
+                            <div class="div-color-3">hello</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="maincontainer" style="background-color: #34495E ;" >
+        <div class="container">
+            <div class="view">OUR EVENT VIEW</div>
+            <div class="category">COMPETITION CATEGORY</div>
+            <div class="grid-4">
+                <div class="grid-4-1"></div>
+                <div class="grid-4-2"></div>
+                <div class="grid-4-3"></div>
+            </div>
+            <div class="grid-5">
+                <div class="grid-5-1"></div>
+                <div class="grid-5-2"></div>
+                <div class="grid-5-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="maincontainer" style="background-color:rgb(214, 226, 202);">
+        <div class="container" >
+            <div class="div-winning" >
+            <div class="winning">COMPETITION WINNING</div>
+            <div class="prize">PRIZES</div>
+            <div class="grid-6">
+                <div class="first-position"><p>FIRST POSITION</p><p>FEB 28, 2021</p></div>
+                <div class="second-position"><p>SECOND POSITION</p><p>FEB 28, 2021</p></div>
+                <div class="third-position"><p>THIRD POSITION</p><p>FEB 28, 2021</p></div>
+                <div class="fourth-position"><p>FOURTH POSITION</p><p>FEB 28, 2021</p></div>
+            </div>
+            <div class="bg-color"></div>
+            </div>
+        </div>
+    </div>
+    <div class="maincontainer" 
+    style="background: linear-gradient(to right, #cc00cc 50%, #ff00ff 100%);
+    ">
+        <div class="container">
+            <div class="div-judge">
+                <div class="judge">JUDGES</div>
+                <div class="c-judges">COMPETITION JUDGES</div>
+                <div class="grid-7">
+                    <div class="grid-7-1"></div>
+                    <div class="grid-7-2"></div>
+                    <div class="grid-7-3"></div>
+                    <div class="grid-7-4"></div>
+                    <div class="grid-7-5"></div>
+                </div>
+                <div class="help">Don't hesitate, contact us for better help and services. <a href="#" class="link">register now</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="maincontainer" style="background-color: white;">
+        <div class="container">
+            <div class="lastdiv">
+                <div class="sponsorships">OUR SPONSORSHIPS</div>
+                <div class="sponsors">OUR COMPETITION SPONSORS</div>
+                <div class="last-div">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <div class="circle-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
